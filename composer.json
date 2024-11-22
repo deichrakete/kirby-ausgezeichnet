@@ -1,0 +1,21 @@
+{
+    "name": "auorg/kirby-ausgezeichnet-seal",
+    "description": "Show your AUSGEZEICHNET.org Seal",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "homepage": "https://www.ausgezeichnet.org",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Stephan Plöhn",
+            "email": "ploehn@deichrakete.com",
+            "homepage": "https://deichrakete.com"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.2"
+    },
+    "extra": {
+        "installer-name": "ausgezeichnet-seal"
+    }
+}
