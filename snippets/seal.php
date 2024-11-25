@@ -15,6 +15,8 @@ $marginHorizontal = option('auorg.ausgezeichnet-seal.margin-horizontal');
 $backgroundColor = option('auorg.ausgezeichnet-seal.background-color');
 $panelBackgroundColor = option('auorg.ausgezeichnet-seal.panel-background-color');
 $panelTextColor = option('auorg.ausgezeichnet-seal.panel-text-color');
+$orgID = option('auorg.ausgezeichnet-seal.orgID');
+$lang = option('auorg.ausgezeichnet-seal.lang');
 ?>
 
 <?php if (option('auorg.ausgezeichnet-seal.use-snippet') || $renderHook): ?>
@@ -27,5 +29,5 @@ $panelTextColor = option('auorg.ausgezeichnet-seal.panel-text-color');
     auorg-data-panel-background-color="<?= $panelBackgroundColor ?>"
     auorg-data-panel-text-color="<?= $panelTextColor ?>">
   </div>
-  <script src="https://siegel.ausgezeichnet.org/widget/js/wi"></script>
+  <script src="https://siegel.ausgezeichnet.org/widgets/<?= $orgID ?>/dynamic-seal.js?lang=<?= $lang ?>"></script>
 <?php endif; ?>

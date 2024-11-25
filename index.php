@@ -15,6 +15,8 @@ Kirby::plugin('auorg/ausgezeichnet-seal', [
     }
   ],
   'options' => [
+    'orgID' => '',
+    'lang' => 'de_DE',
     'use-snippet' => false,
     'type' => 'rounded',
     'position' => 'right',
