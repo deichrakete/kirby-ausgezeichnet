@@ -1,5 +1,5 @@
 {
-    "name": "auorg/kirby-ausgezeichnet-seal",
+    "name": "deichrakete/kirby-ausgezeichnet",
     "description": "Show your AUSGEZEICHNET.org Seal",
     "type": "kirby-plugin",
     "license": "MIT",
@@ -16,6 +16,6 @@
         "getkirby/composer-installer": "^1.2"
     },
     "extra": {
-        "installer-name": "ausgezeichnet-seal"
+        "installer-name": "ausgezeichnet"
     }
 }

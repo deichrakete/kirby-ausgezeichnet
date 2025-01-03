@@ -2,10 +2,10 @@
 
 use Kirby\Cms\App as Kirby;
 
-Kirby::plugin('auorg/ausgezeichnet-seal', [
+Kirby::plugin('deichrakete/ausgezeichnet', [
   'hooks' => [
     'page.render:after' => function ($html) {
-      if (option('auorg.ausgezeichnet-seal.use-snippet')) {
+      if (option('deichrakete.ausgezeichnet.use-snippet')) {
         return $html;
       } else {
         $sealHtml = snippet('ausgezeichnet-seal', ['renderHook' => true], true);

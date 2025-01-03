@@ -8,18 +8,18 @@ if (!isset($renderHook)) {
   $renderHook = false;
 }
 
-$type = option('auorg.ausgezeichnet-seal.type');
-$position = option('auorg.ausgezeichnet-seal.position');
-$marginBottom = option('auorg.ausgezeichnet-seal.margin-bottom');
-$marginHorizontal = option('auorg.ausgezeichnet-seal.margin-horizontal');
-$backgroundColor = option('auorg.ausgezeichnet-seal.background-color');
-$panelBackgroundColor = option('auorg.ausgezeichnet-seal.panel-background-color');
-$panelTextColor = option('auorg.ausgezeichnet-seal.panel-text-color');
-$orgID = option('auorg.ausgezeichnet-seal.orgID');
-$lang = option('auorg.ausgezeichnet-seal.lang');
+$type = option('deichrakete.ausgezeichnet.type');
+$position = option('deichrakete.ausgezeichnet.position');
+$marginBottom = option('deichrakete.ausgezeichnet.margin-bottom');
+$marginHorizontal = option('deichrakete.ausgezeichnet.margin-horizontal');
+$backgroundColor = option('deichrakete.ausgezeichnet.background-color');
+$panelBackgroundColor = option('deichrakete.ausgezeichnet.panel-background-color');
+$panelTextColor = option('deichrakete.ausgezeichnet.panel-text-color');
+$orgID = option('deichrakete.ausgezeichnet.orgID');
+$lang = option('deichrakete.ausgezeichnet.lang');
 ?>
 
-<?php if (option('auorg.ausgezeichnet-seal.use-snippet') || $renderHook): ?>
+<?php if ((option('deichrakete.ausgezeichnet.use-snippet') || $renderHook) && $orgID != ''): ?>
   <div class="auorgDynamicSeal"
     auorg-data-type="<?= $type ?>"
     auorg-data-position="<?= $position ?>"

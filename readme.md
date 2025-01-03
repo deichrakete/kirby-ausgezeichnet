@@ -5,7 +5,7 @@
 Via composer: 
 
 ```bash
-composer require vendor/kirby-ausgezeichnet-seal
+composer require deichrakete/kirby-ausgezeichnet
 ```
 
 or just place it into the `site/plugins` folder.
@@ -18,7 +18,9 @@ You can define the following options:
 # site/config.php
 
 return [
-    'auorg.ausgezeichnet-seal' => [
+    'deichrakete.ausgezeichnet' => [
+        'orgID' => '', # your AUSGEZEICHNET.org ID
+        'lang' => 'de_DE', # language of the Seal
         'use-snippet' => false, # see description below
         'type' => 'rounded',
         'position' => 'right',
